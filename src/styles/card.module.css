@@ -2,23 +2,34 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  border-radius: 15;
 }
 
-.row ::after{
-  margin-left: 30;
+.row :hover {
+  opacity: 0.5;
+  border: 1px white;
 }
 
-.card {
-  max-width: 300px;
-  text-align: center;
-  
-}
+
 .price {
   color: grey;
   font-size: 30px;
 }
 
-.textos{
-  font-style:oblique;
+.textos {
+  font-style: oblique;
 }
 
+
+.button {
+  margin-top:15;  
+  margin-bottom: 15;
+  border-radius: 15;
+  background-color: white;
+  border: 1px white;
+  font-size: large;
+}
+
+.button :hover {
+  cursor: pointer;
+}

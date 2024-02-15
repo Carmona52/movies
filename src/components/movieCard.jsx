@@ -80,12 +80,8 @@ function agruparData(array, tamañoGrupo) {
 ))}
      {selectedMovie && (
         <Popup defaultOpen modal>
-          <div style={{ width: 400, textAlign: 'center', backgroundColor:'white' }}>
+          <div style={{ width: 400, textAlign: 'center', backgroundColor:'white', padding:10, borderRadius:15 }}>
             <h1 className={styles.price}>{selectedMovie.title}</h1>
-            <p>
-              <p className={styles.textos}>Descripción:</p>
-              {selectedMovie.description}
-            </p>
             <p>
               <p className={styles.textos}>Año de Lanzamiento:</p>
               {selectedMovie.releaseYear}
@@ -93,10 +89,16 @@ function agruparData(array, tamañoGrupo) {
             <img
               src={selectedMovie.images['Poster Art'].url}
               alt={selectedMovie.title}
-              style={{ width: 300 }}
+              style={{ width: 200, borderRadius:15}}
             />
+            <p>
+              <p className={styles.textos}>Descripción:</p>
+              {selectedMovie.description}
+            </p>
+           
+           
             <br />
-            <button onClick={() => setSelectedMovie(null)}>Cerrar</button>
+            <button onClick={() => setSelectedMovie(null)} className={styles.button}>Cerrar</button>
           </div>
         </Popup>
       )}
