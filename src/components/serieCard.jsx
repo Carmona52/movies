@@ -25,7 +25,7 @@ const Card = () => {
 const pF = data.entries.filter(entry => entry.programType === "series" && entry.releaseYear >= 2010);
     pF.sort((a, b) => a.title.localeCompare(b.title));
     const p20 = pF.slice(0, 20);
-    const dA = agruparData(p20, 3);
+    const dA = agruparData(p20, 4);
 
     const handleMovieClick = (movie) => {
       setSelectedMovie(movie);

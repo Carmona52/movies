@@ -26,13 +26,21 @@
   
   .Peliculas {
     grid-area: Peliculas;
-  text-align: center;
+    text-align: center;
   
+  }
+
+  .Peliculas :hover{
+    opacity: .9;
   }
   
   .Series {
     grid-area: Series;
   text-align: center;
+  }
+
+  .Series :hover{
+    opacity: .9;
   }
   
   .poster{
