@@ -1,0 +1,30 @@
+.main{
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+}
+
+.title{
+    text-align: center;
+    
+}
+
+.img{
+    margin: auto;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "PELICULAS SERIES";
+  }
+  
+  .PELICULAS { grid-area: PELICULAS; }
+  
+  .SERIES { grid-area: SERIES; }
+  

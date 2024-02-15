@@ -1,0 +1,24 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.row ::after{
+  margin-left: 30;
+}
+
+.card {
+  max-width: 300px;
+  text-align: center;
+  
+}
+.price {
+  color: grey;
+  font-size: 30px;
+}
+
+.textos{
+  font-style:oblique;
+}
+

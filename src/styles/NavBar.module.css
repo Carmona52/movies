@@ -1,0 +1,15 @@
+.main{
+    width: 80%;
+    height: 30px;
+    margin: auto;
+    margin-top:10;
+    background-color: rgb(77, 75, 75);
+}
+
+.links{
+    width: 100px;
+    color: white;
+    margin-left: 60px;
+    padding: 10px;
+    
+}
